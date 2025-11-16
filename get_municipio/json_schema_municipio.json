@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "municipioid": {
+      "type": "integer"
+    },
+    "gentilicio": {
+      "type": "string"
+    },
+    "sitioweb": {
+      "type": "string"
+    },
+    "provincia":{
+    	"type":"string"
+    }
+  },
+  "required": [
+    "municipioid",
+    "gentilicio",
+    "sitioweb",
+    "provincia"
+  ]
+}

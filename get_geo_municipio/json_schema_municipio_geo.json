@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "municipioid": {
+      "type": "integer"
+    },
+    "latitud": {
+      "type": "number"
+    },
+    "longitud": {
+      "type": "number"
+    },
+    "altitud": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "municipioid",
+    "latitud",
+    "longitud",
+    "altitud"
+  ]
+}

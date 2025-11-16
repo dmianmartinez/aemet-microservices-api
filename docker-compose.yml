@@ -1,0 +1,49 @@
+services:
+  getmunicipio:
+    build:
+      context: ./get_municipio
+    image: damianmartinez99/getmunicipio:latest
+    ports:
+      - "5001:5000"
+    networks:
+      - microservicios-net
+
+  getgeomunicipio:
+    build:
+      context: ./get_geo_municipio
+    image: damianmartinez99/getgeomunicipio:latest
+    ports:
+      - "5002:5000"
+    networks:
+      - microservicios-net
+
+  getmeteomunicipio:
+    build:
+      context: ./get_meteo_municipio
+    image: damianmartinez99/getmeteomunicipio:latest
+    ports:
+      - "5003:5000"
+    networks:
+      - microservicios-net
+
+  getdemomunicipio:
+    build:
+      context: ./get_demo_municipio
+    image: damianmartinez99/getdemomunicipio:latest
+    ports:
+      - "5004:5000"
+    networks:
+      - microservicios-net
+
+  getvariosmunicipio:
+    build:
+      context: ./get_varios_municipio
+    image: damianmartinez99/getvariosmunicipio:latest
+    ports:
+      - "5005:5000"
+    networks:
+      - microservicios-net
+
+networks:
+  microservicios-net:
+    driver: bridge

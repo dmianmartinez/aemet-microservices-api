@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "municipioid": {
+      "type": "integer"
+    },
+    "temperatura_actual": {
+      "type": "string"
+    },
+    "temperaturas": {
+      "type": "object",
+      "properties": {
+        "max": {
+          "type": "string"
+        },
+        "min": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "max",
+        "min"
+      ]
+    },
+    "humedad": {
+      "type": "string"
+    },
+    "viento": {
+      "type": "string"
+    },
+    "precipitacion": {
+      "type": "string"
+    },
+    "estadocielo": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "municipioid",
+    "temperatura_actual",
+    "temperaturas",
+    "humedad",
+    "viento",
+    "precipitacion",
+    "estadocielo"
+  ]
+}

@@ -48,6 +48,8 @@ Aquí tienes algunos ejemplos de cómo usar la API:
 
 - **Obtener datos básicos:** `GET http://localhost:5001/cordoba`
 - **Obtener datos geográficos:** `GET http://localhost:5002/cordoba/geo`
+- **Obtener datos meteorológicos:** `GET http://localhost:5003/cordoba/meteo`
+- **Obtener datos demográficos:** `GET http://localhost:5004/cordoba/demo`
 - **Orquestar servicios:** `GET http://localhost:5005/cordoba/geo/demo`
 
 ## Licencia

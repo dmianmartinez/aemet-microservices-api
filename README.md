@@ -28,16 +28,14 @@ Sigue estos pasos para levantar el entorno completo en tu máquina local.
     ```
 
 2.  **Configura las variables de entorno:**
-    Crea un fichero `.env` a partir del ejemplo.
-    ```bash
-    cp .env.example .env
-    ```
+    Crea un fichero `.env`
+    
     Ahora, edita el fichero `.env` y añade tu [API Key de AEMET](https://opendata.aemet.es/centrodedescargas/altaUsuario):
     ```
     AEMET_API_KEY="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOi..."
     ```
 
-3.  **Construye y levanta los contenedores:**
+4.  **Construye y levanta los contenedores:**
     ```bash
     docker-compose up --build
     ```
